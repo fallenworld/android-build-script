@@ -1,0 +1,24 @@
+#!/bin/bash
+
+#Created by fallenworld
+#email:fallenworlder@gmail.com
+
+cd glib-2.50.2
+
+ANDROID_BUILD=~/sda4/android-build
+PATH=$ANDROID_BUILD/bin:$PATH
+SYSROOT=$ANDROID_BUILD/sysroot
+HOST=arm-linux-androideabi
+CFLAGS="-march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fPIC"
+CXXFLAGS_="-std=c++11 -fPIC"
+LIBS=
+LIBDIRS="-L$ANDROID_BUILD/arm-linux-androideabi/lib"
+LDFLAGS="-march=armv7-a -Wl,--fix-cortex-a8 $LIBDIRS -fPIC"
+CONFLAGS="--prefix=${SYSROOT}/usr --host=$HOST --cache-file=android.cache --enable-static --disable-libmount"
+
+#configure
+CFLAGS="$CFLAGS" CXXFLAGS="$CXXFLAGS" LDFLAGS="$LDFLAGS" ./configure $CONFLAGS &&
+
+#make & install
+make && make install
+

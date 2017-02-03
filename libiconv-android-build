@@ -3,50 +3,22 @@
 #Created by fallenworld
 #email:fallenworlder@gmail.com
 
-#enviroment vars
-export NDK=~/sda4/ndk
-export NDK_BIN=$NDK/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin
-export PATH=$NDK_BIN:$PATH
-export SYSROOT="$NDK/platforms/android-21/arch-arm"
+cd libiconv-1.14
 
-#create links to android build tools
-ln -s $NDK_BIN/arm-linux-androideabi-addr2line $NDK_BIN/arm-linux-eabi-addr2line
-ln -s $NDK_BIN/arm-linux-androideabi-ar $NDK_BIN/arm-linux-eabi-ar
-ln -s $NDK_BIN/arm-linux-androideabi-as $NDK_BIN/arm-linux-eabi-as
-ln -s $NDK_BIN/arm-linux-androideabi-c++ $NDK_BIN/arm-linux-eabi-c++
-ln -s $NDK_BIN/arm-linux-androideabi-c++filt $NDK_BIN/arm-linux-eabi-c++filt
-ln -s $NDK_BIN/arm-linux-androideabi-cpp $NDK_BIN/arm-linux-eabi-cpp
-ln -s $NDK_BIN/arm-linux-androideabi-dwp $NDK_BIN/arm-linux-eabi-dwp
-ln -s $NDK_BIN/arm-linux-androideabi-elfedit $NDK_BIN/arm-linux-eabi-elfedit
-ln -s $NDK_BIN/arm-linux-androideabi-g++ $NDK_BIN/arm-linux-eabi-g++
-ln -s $NDK_BIN/arm-linux-androideabi-gcc $NDK_BIN/arm-linux-eabi-gcc
-ln -s $NDK_BIN/arm-linux-androideabi-gcc-4.9 $NDK_BIN/arm-linux-eabi-gcc-4.9
-ln -s $NDK_BIN/arm-linux-androideabi-gcc-4.9.x $NDK_BIN/arm-linux-eabi-gcc-4.9.x
-ln -s $NDK_BIN/arm-linux-androideabi-gcc-ar $NDK_BIN/arm-linux-eabi-gcc-ar
-ln -s $NDK_BIN/arm-linux-androideabi-gcc-nm $NDK_BIN/arm-linux-eabi-gcc-nm
-ln -s $NDK_BIN/arm-linux-androideabi-gcc-ranlib $NDK_BIN/arm-linux-eabi-gcc-ranlib
-ln -s $NDK_BIN/arm-linux-androideabi-gcov $NDK_BIN/arm-linux-eabi-gcov
-ln -s $NDK_BIN/arm-linux-androideabi-gcov-tool $NDK_BIN/arm-linux-eabi-gcov-tool
-ln -s $NDK_BIN/arm-linux-androideabi-gprof $NDK_BIN/arm-linux-eabi-gprof
-ln -s $NDK_BIN/arm-linux-androideabi-ld $NDK_BIN/arm-linux-eabi-ld
-ln -s $NDK_BIN/arm-linux-androideabi-ld.bfd $NDK_BIN/arm-linux-eabi-ld.bfd
-ln -s $NDK_BIN/arm-linux-androideabi-ld.gold $NDK_BIN/arm-linux-eabi-ld.gold
-ln -s $NDK_BIN/arm-linux-androideabi-nm $NDK_BIN/arm-linux-eabi-nm
-ln -s $NDK_BIN/arm-linux-androideabi-objcopy $NDK_BIN/arm-linux-eabi-objcopy
-ln -s $NDK_BIN/arm-linux-androideabi-objdump $NDK_BIN/arm-linux-eabi-objdump
-ln -s $NDK_BIN/arm-linux-androideabi-ranlib $NDK_BIN/arm-linux-eabi-ranlib
-ln -s $NDK_BIN/arm-linux-androideabi-readelf $NDK_BIN/arm-linux-eabi-readelf
-ln -s $NDK_BIN/arm-linux-androideabi-size $NDK_BIN/arm-linux-eabi-size
-ln -s $NDK_BIN/arm-linux-androideabi-strings $NDK_BIN/arm-linux-eabi-strings
-ln -s $NDK_BIN/arm-linux-androideabi-strip $NDK_BIN/arm-linux-eabi-strip
+ANDROID_BUILD=~/sda4/android-build
+PATH=$ANDROID_BUILD/bin:$PATH
+SYSROOT=$ANDROID_BUILD/sysroot
+HOST=arm-linux-androideabi
+CFLAGS="-march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16"
+CXXFLAGS="-std=c++11"
+LIBS=
+LIBDIRS="-L$ANDROID_BUILD/arm-linux-androideabi/lib"
+LDFLAGS="-march=armv7-a -Wl,--fix-cortex-a8 $LIBDIRS"
+CONFLAGS="--prefix=${SYSROOT}/usr --host=$HOST"
 
 #configure
-CPP="arm-linux-eabi-gcc -E" CPPFLAGS="-I${SYSROOT}/usr/include" ./configure --prefix="${SYSROOT}/usr" --host=arm-linux-eabi CFLAGS="--sysroot $SYSROOT"
+CFLAGS="$CFLAGS" CXXFLAGS="$CXXFLAGS" LDFLAGS="$LDFLAGS" ./configure $CONFLAGS &&
 
 #make & install
-make
-make install
+make && make install
 
-echo
-echo Build success
-echo

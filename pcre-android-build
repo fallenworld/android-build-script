@@ -1,0 +1,24 @@
+#!/bin/bash
+
+#Created by fallenworld
+#email:fallenworlder@gmail.com
+
+cd pcre-8.40
+
+ANDROID_BUILD=~/sda4/android-build
+PATH=$ANDROID_BUILD/bin:$PATH
+SYSROOT=$ANDROID_BUILD/sysroot
+HOST=arm-linux-androideabi
+CFLAGS="-march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16"
+CXXFLAGS="-std=c++11"
+LIBS=
+LIBDIRS="-L$ANDROID_BUILD/arm-linux-androideabi/lib"
+LDFLAGS="-march=armv7-a -Wl,--fix-cortex-a8 $LIBDIRS"
+CONFLAGS="--prefix=${SYSROOT}/usr --host=$HOST"
+
+#configure
+CFLAGS="$CFLAGS" CXXFLAGS="$CXXFLAGS" LDFLAGS="$LDFLAGS" ./configure $CONFLAGS &&
+
+#make & install
+make && make install
+

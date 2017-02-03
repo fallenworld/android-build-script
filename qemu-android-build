@@ -1,0 +1,28 @@
+#!/bin/bash
+
+#Created by fallenworld
+#email:fallenworlder@gmail.com
+
+cd qemu-2.8.0
+
+ANDROID_BUILD=~/sda4/android-build
+PATH=$ANDROID_BUILD/bin:$PATH
+SYSROOT=$ANDROID_BUILD/sysroot
+HOST=arm-linux-androideabi
+CC=$HOST-gcc
+CXX=$HOST-g++
+CFLAGS="-march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fPIE -pie"
+CXXFLAGS="-std=c++11"
+LIBS="-lstdc++"
+LIBDIRS="-L$ANDROID_BUILD/arm-linux-androideabi/lib"
+LDFLAGS="-march=armv7-a -Wl,--fix-cortex-a8 $LIBDIRS -fPIE -pie"
+PKG_CONFIG_PATH="$SYSROOT/usr/lib/pkgconfig"
+CONFLAGS="--prefix=${SYSROOT}/usr --cross-prefix=${HOST}- --target-list=arm-linux-user --cpu=arm --disable-system --disable-bsd-user --disable-tools --disable-zlib-test --disable-guest-agent"
+# --cc=$CC --host-cc=$CC --cxx=$CXX --extra-cflags=\"$CFLAGS\" --extra-ldflags=\"$LDFLAGS\"
+#--extra-ldflags="-fPIE -pie --sysroot $SYSROOT -L$NDK/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/lib/gcc/arm-linux-androideabi/4.9/ -L$NDK/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi/ -L$NDK/platforms/android-21/arch-arm/usr/lib/" --extra-cflags="-fPIE -pie --sysroot $SYSROOT -I$NDK/sources/cxx-stl/gnu-libstdc++/4.9/include -I$NDK/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi/include -L$NDK/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi/"
+
+ln -s /usr/bin/pkg-config $ANDROID_BUILD/bin/arm-linux-androideabi-pkg-config
+
+PKG_CONFIG_PATH="$PKG_CONFIG_PATH" CFLAGS="$CFLAGS" CXXFLAGS="$CXXFLAGS" LDFLAGS="$LDFLAGS" ./configure $CONFLAGS
+
+#make && make install
