@@ -159,9 +159,9 @@ dummy := $(call unnest-vars,, \
                 common-obj-y \
                 common-obj-m)
 
-ifneq ($(wildcard config-host.mak),)
-include $(SRC_PATH)/tests/Makefile.include
-endif
+#ifneq ($(wildcard config-host.mak),)
+#include $(SRC_PATH)/tests/Makefile.include
+#endif
 
 all: $(DOCS) $(TOOLS) $(HELPERS-y) recurse-all modules
 

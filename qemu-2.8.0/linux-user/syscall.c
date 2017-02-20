@@ -77,7 +77,11 @@ int __clone2(int (*fn)(void *), void *child_stack_base,
 #include <sys/sendfile.h>
 #endif
 
+#ifdef __ANDROID__
+#define host_termios termios
+#else
 #define termios host_termios
+#endif
 #define winsize host_winsize
 #define termio host_termio
 #define sgttyb host_sgttyb /* same as target */
@@ -129,6 +133,161 @@ int __clone2(int (*fn)(void *), void *child_stack_base,
 /* For thread creation, all these flags must be present; for
  * fork, none must be present.
  */
+
+#ifdef __ANDROID__
+
+int setdomainname(const char *name, size_t len) {
+    printf("[-] %s(%d)-%s\n",__FILE__,__LINE__,__FUNCTION__);
+    assert(0);
+}
+
+int shmget(key_t key, size_t size, int shmflg) {
+    printf("[-] %s(%d)-%s\n",__FILE__,__LINE__,__FUNCTION__);
+    assert(0);
+}
+
+int shmdt(const void *shmaddr) {
+    printf("[-] %s(%d)-%s\n",__FILE__,__LINE__,__FUNCTION__);
+    assert(0);
+}
+
+int shmctl(int shmid, int cmd, struct shmid_ds *buf) {
+    printf("[-] %s(%d)-%s\n",__FILE__,__LINE__,__FUNCTION__);
+    assert(0);
+}
+
+void *shmat(int shmid, const void *shmaddr, int shmflg) {
+    printf("[-] %s(%d)-%s\n",__FILE__,__LINE__,__FUNCTION__);
+    assert(0);
+}
+
+int msgctl(int msqid, int cmd, struct msqid_ds *buf) {
+    printf("[-] %s(%d)-%s\n",__FILE__,__LINE__,__FUNCTION__);
+    assert(0);
+}
+
+int mq_timedsend(unsigned long mqdes, const char *msg_ptr,
+              size_t msg_len, unsigned msg_prio,
+              const struct timespec *abs_timeout) {
+    printf("[-] %s(%d)-%s\n",__FILE__,__LINE__,__FUNCTION__);
+    assert(0);
+}
+
+int mq_unlink(const char *name) {
+    printf("[-] %s(%d)-%s\n",__FILE__,__LINE__,__FUNCTION__);
+    assert(0);
+}
+
+unsigned long mq_open(const char *name, int oflag, mode_t mode,
+                     struct mq_attr *attr) {
+    printf("[-] %s(%d)-%s\n",__FILE__,__LINE__,__FUNCTION__);
+    assert(0);
+}
+
+int mq_setattr(unsigned long mqdes, const struct mq_attr *newattr,
+                        struct mq_attr *oldattr) {
+    printf("[-] %s(%d)-%s\n",__FILE__,__LINE__,__FUNCTION__);
+    assert(0);
+}
+
+ssize_t mq_timedreceive(unsigned long mqdes, char *msg_ptr,
+                   size_t msg_len, unsigned *msg_prio,
+                   const struct timespec *abs_timeout) {
+    printf("[-] %s(%d)-%s\n",__FILE__,__LINE__,__FUNCTION__);
+    assert(0);
+}
+
+int msgsnd(int msqid, const void *msgp, size_t msgsz, int msgflg) {
+    printf("[-] %s(%d)-%s\n",__FILE__,__LINE__,__FUNCTION__);
+    assert(0);
+}
+
+ssize_t msgrcv(int msqid, void *msgp, size_t msgsz, long msgtyp,
+               int msgflg) {
+    printf("[-] %s(%d)-%s\n",__FILE__,__LINE__,__FUNCTION__);
+    assert(0);
+}
+
+int semget(key_t key, int nsems, int semflg) {
+    printf("[-] %s(%d)-%s\n",__FILE__,__LINE__,__FUNCTION__);
+    assert(0);
+}
+
+int semop(int semid, struct sembuf *sops, size_t nsops) {
+    printf("[-] %s(%d)-%s\n",__FILE__,__LINE__,__FUNCTION__);
+    assert(0);
+}
+
+int msgget(key_t key, int msgflg) {
+    printf("[-] %s(%d)-%s\n",__FILE__,__LINE__,__FUNCTION__);
+    assert(0);
+}
+
+int stime(const time_t *t) {
+    printf("[-] %s(%d)-%s\n",__FILE__,__LINE__,__FUNCTION__);
+    assert(0);
+}
+
+int sigorset(sigset_t * set, const sigset_t * left, const sigset_t * right) {
+    printf("[-] %s(%d)-%s\n",__FILE__,__LINE__,__FUNCTION__);
+    assert(0);
+}
+
+int vhangup(void) {
+    printf("[-] %s(%d)-%s\n",__FILE__,__LINE__,__FUNCTION__);
+    assert(0);
+}
+
+int sigtimedwait(const sigset_t *set, siginfo_t *info,
+                 const struct timespec *timeout) {
+    printf("[-] %s(%d)-%s\n",__FILE__,__LINE__,__FUNCTION__);
+    assert(0);
+}
+
+int sethostname(const char *name, size_t len) {
+    printf("[-] %s(%d)-%s\n",__FILE__,__LINE__,__FUNCTION__);
+    assert(0);
+}
+
+int semctl(int semid, int semnum, int cmd, ...) {
+    printf("[-] %s(%d)-%s\n",__FILE__,__LINE__,__FUNCTION__);
+    assert(0);
+}
+
+int futimesat(int dirfd, const char *pathname,
+                     const struct timeval times[2]) {
+    printf("[-] %s(%d)-%s\n",__FILE__,__LINE__,__FUNCTION__);
+    assert(0);
+}
+
+int mq_send(unsigned long mqdes, const char *msg_ptr,
+                     size_t msg_len, unsigned int msg_prio) {
+    printf("[-] %s(%d)-%s\n",__FILE__,__LINE__,__FUNCTION__);
+    assert(0);
+}
+
+ssize_t mq_receive(unsigned long mqdes, char *msg_ptr,
+                          size_t msg_len, unsigned int *msg_prio) {
+    printf("[-] %s(%d)-%s\n",__FILE__,__LINE__,__FUNCTION__);
+    assert(0);
+}
+
+int mq_getattr(unsigned long mqdes, struct mq_attr *attr) {
+    printf("[-] %s(%d)-%s\n",__FILE__,__LINE__,__FUNCTION__);
+    assert(0);
+}
+
+int adjtimex(struct timex *buf){
+    printf("[-] %s(%d)-%s\n",__FILE__,__LINE__,__FUNCTION__);
+    assert(0);
+}
+
+#endif
+
+#if defined(__ANDROID__) && !defined(IOV_MAX)
+#define IOV_MAX 1024
+#endif
+
 #define CLONE_THREAD_FLAGS                              \
     (CLONE_VM | CLONE_FS | CLONE_FILES |                \
      CLONE_SIGHAND | CLONE_THREAD | CLONE_SYSVSEM)
@@ -252,6 +411,7 @@ static type name (type1 arg1,type2 arg2,type3 arg3,type4 arg4,type5 arg5,	\
 #define TARGET_NR__llseek TARGET_NR_llseek
 #endif
 
+#ifndef __ANDROID__
 #ifdef __NR_gettid
 _syscall0(int, gettid)
 #else
@@ -260,6 +420,7 @@ _syscall0(int, gettid)
 static int gettid(void) {
     return -ENOSYS;
 }
+#endif
 #endif
 #if defined(TARGET_NR_getdents) && defined(__NR_getdents)
 _syscall3(int, sys_getdents, uint, fd, struct linux_dirent *, dirp, uint, count);
@@ -1361,7 +1522,7 @@ static inline abi_long copy_from_user_timezone(struct timezone *tz,
 }
 
 #if defined(TARGET_NR_mq_open) && defined(__NR_mq_open)
-#include <mqueue.h>
+#include <linux/mqueue.h>
 
 static inline abi_long copy_from_user_mq_attr(struct mq_attr *attr,
                                               abi_ulong target_mq_attr_addr)
@@ -4036,7 +4197,7 @@ static inline abi_long target_to_host_ipc_perm(struct ipc_perm *host_ip,
     if (!lock_user_struct(VERIFY_READ, target_sd, target_addr, 1))
         return -TARGET_EFAULT;
     target_ip = &(target_sd->sem_perm);
-    host_ip->__key = tswap32(target_ip->__key);
+    host_ip->key = tswap32(target_ip->__key);
     host_ip->uid = tswap32(target_ip->uid);
     host_ip->gid = tswap32(target_ip->gid);
     host_ip->cuid = tswap32(target_ip->cuid);
@@ -4049,7 +4210,7 @@ static inline abi_long target_to_host_ipc_perm(struct ipc_perm *host_ip,
 #if defined(TARGET_PPC)
     host_ip->__seq = tswap32(target_ip->__seq);
 #else
-    host_ip->__seq = tswap16(target_ip->__seq);
+    host_ip->seq = tswap16(target_ip->__seq);
 #endif
     unlock_user_struct(target_sd, target_addr, 0);
     return 0;
@@ -4064,7 +4225,7 @@ static inline abi_long host_to_target_ipc_perm(abi_ulong target_addr,
     if (!lock_user_struct(VERIFY_WRITE, target_sd, target_addr, 0))
         return -TARGET_EFAULT;
     target_ip = &(target_sd->sem_perm);
-    target_ip->__key = tswap32(host_ip->__key);
+    target_ip->__key = tswap32(host_ip->key);
     target_ip->uid = tswap32(host_ip->uid);
     target_ip->gid = tswap32(host_ip->gid);
     target_ip->cuid = tswap32(host_ip->cuid);
@@ -4077,7 +4238,7 @@ static inline abi_long host_to_target_ipc_perm(abi_ulong target_addr,
 #if defined(TARGET_PPC)
     target_ip->__seq = tswap32(host_ip->__seq);
 #else
-    target_ip->__seq = tswap16(host_ip->__seq);
+    target_ip->__seq = tswap16(host_ip->seq);
 #endif
     unlock_user_struct(target_sd, target_addr, 1);
     return 0;
@@ -4148,12 +4309,14 @@ static inline abi_long host_to_target_seminfo(abi_ulong target_addr,
     return 0;
 }
 
+#ifndef __ANDROID__
 union semun {
 	int val;
 	struct semid_ds *buf;
 	unsigned short *array;
 	struct seminfo *__buf;
 };
+#endif
 
 union target_semun {
 	int val;
@@ -4374,7 +4537,7 @@ static inline abi_long target_to_host_msqid_ds(struct msqid_ds *host_md,
     host_md->msg_stime = tswapal(target_md->msg_stime);
     host_md->msg_rtime = tswapal(target_md->msg_rtime);
     host_md->msg_ctime = tswapal(target_md->msg_ctime);
-    host_md->__msg_cbytes = tswapal(target_md->__msg_cbytes);
+    host_md->msg_cbytes = tswapal(target_md->__msg_cbytes);
     host_md->msg_qnum = tswapal(target_md->msg_qnum);
     host_md->msg_qbytes = tswapal(target_md->msg_qbytes);
     host_md->msg_lspid = tswapal(target_md->msg_lspid);
@@ -4395,7 +4558,7 @@ static inline abi_long host_to_target_msqid_ds(abi_ulong target_addr,
     target_md->msg_stime = tswapal(host_md->msg_stime);
     target_md->msg_rtime = tswapal(host_md->msg_rtime);
     target_md->msg_ctime = tswapal(host_md->msg_ctime);
-    target_md->__msg_cbytes = tswapal(host_md->__msg_cbytes);
+    target_md->__msg_cbytes = tswapal(host_md->msg_cbytes);
     target_md->msg_qnum = tswapal(host_md->msg_qnum);
     target_md->msg_qbytes = tswapal(host_md->msg_qbytes);
     target_md->msg_lspid = tswapal(host_md->msg_lspid);
@@ -12183,3 +12346,4 @@ efault:
     ret = -TARGET_EFAULT;
     goto fail;
 }
+
