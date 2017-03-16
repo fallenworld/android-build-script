@@ -5,7 +5,7 @@
 
 cd libffi-3.2.1
 
-ANDROID_BUILD=~/sda4/android-build
+ANDROID_BUILD=~/dev/android/build
 PATH=$ANDROID_BUILD/bin:$PATH
 SYSROOT=$ANDROID_BUILD/sysroot
 HOST=arm-linux-androideabi
@@ -13,14 +13,18 @@ CFLAGS="-march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16"
 CXXFLAGS="-std=c++11"
 LIBS=
 LIBDIRS="-L$ANDROID_BUILD/arm-linux-androideabi/lib"
-LDFLAGS="-march=armv7-a -Wl,--fix-cortex-a8 $LIBDIRS"
+LDFLAGS="-march=armv7-a -Wl,--fix-cortex-a8,-soname,libffi.so $LIBDIRS"
 CONFLAGS="--prefix=${SYSROOT}/usr --host=$HOST"
+SOPATH=arm-unknown-linux-androideabi/.libs/libffi.so
 
 #configure
-CFLAGS="$CFLAGS" CXXFLAGS="$CXXFLAGS" LDFLAGS="$LDFLAGS" ./configure $CONFLAGS &&
+LIBTOOLFLAGS="-avoid-version" CFLAGS="$CFLAGS" CXXFLAGS="$CXXFLAGS" LDFLAGS="$LDFLAGS" ./configure $CONFLAGS &&
 
 #make & install
-make && make install
+make && make install &&
+
+#Copy .so files
+cp -fv $SOPATH ../androidLibs/
 
 #Copy include files
 cp -fv ${SYSROOT}/usr/lib/libffi-3.2.1/include/* ${SYSROOT}/usr/include/

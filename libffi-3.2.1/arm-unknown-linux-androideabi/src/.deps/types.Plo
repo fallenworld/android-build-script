@@ -1,0 +1,52 @@
+src/types.lo: ../src/types.c include/ffi.h include/ffitarget.h \
+ /home/fallenworld/dev/android/build/lib/gcc/arm-linux-androideabi/4.9.x/include/stddef.h \
+ /home/fallenworld/dev/android/build/lib/gcc/arm-linux-androideabi/4.9.x/include-fixed/limits.h \
+ /home/fallenworld/dev/android/build/lib/gcc/arm-linux-androideabi/4.9.x/include-fixed/syslimits.h \
+ /home/fallenworld/dev/android/build/sysroot/usr/include/limits.h \
+ /home/fallenworld/dev/android/build/sysroot/usr/include/sys/cdefs.h \
+ /home/fallenworld/dev/android/build/sysroot/usr/include/sys/cdefs_elf.h \
+ /home/fallenworld/dev/android/build/sysroot/usr/include/android/api-level.h \
+ /home/fallenworld/dev/android/build/sysroot/usr/include/sys/limits.h \
+ /home/fallenworld/dev/android/build/sysroot/usr/include/linux/limits.h \
+ /home/fallenworld/dev/android/build/sysroot/usr/include/sys/syslimits.h \
+ ../include/ffi_common.h fficonfig.h \
+ /home/fallenworld/dev/android/build/sysroot/usr/include/alloca.h \
+ /home/fallenworld/dev/android/build/sysroot/usr/include/string.h \
+ /home/fallenworld/dev/android/build/sysroot/usr/include/malloc.h \
+ /home/fallenworld/dev/android/build/sysroot/usr/include/xlocale.h
+
+include/ffi.h:
+
+include/ffitarget.h:
+
+/home/fallenworld/dev/android/build/lib/gcc/arm-linux-androideabi/4.9.x/include/stddef.h:
+
+/home/fallenworld/dev/android/build/lib/gcc/arm-linux-androideabi/4.9.x/include-fixed/limits.h:
+
+/home/fallenworld/dev/android/build/lib/gcc/arm-linux-androideabi/4.9.x/include-fixed/syslimits.h:
+
+/home/fallenworld/dev/android/build/sysroot/usr/include/limits.h:
+
+/home/fallenworld/dev/android/build/sysroot/usr/include/sys/cdefs.h:
+
+/home/fallenworld/dev/android/build/sysroot/usr/include/sys/cdefs_elf.h:
+
+/home/fallenworld/dev/android/build/sysroot/usr/include/android/api-level.h:
+
+/home/fallenworld/dev/android/build/sysroot/usr/include/sys/limits.h:
+
+/home/fallenworld/dev/android/build/sysroot/usr/include/linux/limits.h:
+
+/home/fallenworld/dev/android/build/sysroot/usr/include/sys/syslimits.h:
+
+../include/ffi_common.h:
+
+fficonfig.h:
+
+/home/fallenworld/dev/android/build/sysroot/usr/include/alloca.h:
+
+/home/fallenworld/dev/android/build/sysroot/usr/include/string.h:
+
+/home/fallenworld/dev/android/build/sysroot/usr/include/malloc.h:
+
+/home/fallenworld/dev/android/build/sysroot/usr/include/xlocale.h:

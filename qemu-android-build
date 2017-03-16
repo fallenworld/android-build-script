@@ -5,16 +5,16 @@
 
 cd qemu-2.8.0
 
-ANDROID_BUILD=~/sda4/android-build
+ANDROID_BUILD=~/dev/android/build
 PATH=$ANDROID_BUILD/bin:$PATH
 SYSROOT=$ANDROID_BUILD/sysroot
 HOST=arm-linux-androideabi
 CC=$HOST-gcc
 CXX=$HOST-g++
-CFLAGS="-march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fPIE -pie"
+CFLAGS="-march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fPIE -pie -fPIC -Wno-missing-prototypes"
 CXXFLAGS="-std=c++11"
 LIBDIRS="-L$ANDROID_BUILD/arm-linux-androideabi/lib"
-LDFLAGS="-march=armv7-a -Wl,--fix-cortex-a8 $LIBDIRS -fPIE -pie"
+LDFLAGS="-march=armv7-a -Wl,--fix-cortex-a8,-soname,libqemu.so $LIBDIRS -fPIE -pie -fPIC -shared"
 PKG_CONFIG_PATH="$SYSROOT/usr/lib/pkgconfig"
 CONFLAGS="--prefix=${SYSROOT}/usr --cross-prefix=${HOST}- --host-cc=$CC --target-list=i386-linux-user --cpu=arm --disable-system --disable-bsd-user --disable-tools --disable-zlib-test --disable-guest-agent --disable-nettle"
 
@@ -22,4 +22,7 @@ ln -s /usr/bin/pkg-config $ANDROID_BUILD/bin/arm-linux-androideabi-pkg-config
 
 PKG_CONFIG_PATH=$PKG_CONFIG_PATH CC=$CC CXX=$CXX CFLAGS="$CFLAGS" CXXFLAGS="$CXXFLAGS" LDFLAGS="$LDFLAGS" ./configure $CONFLAGS &&
 
-make && make install
+make && make install &&
+
+#copy .so files
+cp -fv i386-linux-user/qemu-i386 ../androidLibs/libqemu.so

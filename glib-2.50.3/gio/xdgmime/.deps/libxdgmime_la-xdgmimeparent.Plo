@@ -1,0 +1,122 @@
+libxdgmime_la-xdgmimeparent.lo: xdgmimeparent.c ../../config.h \
+ xdgmimeparent.h xdgmime.h \
+ /home/fallenworld/dev/android/build/sysroot/usr/include/stdlib.h \
+ /home/fallenworld/dev/android/build/sysroot/usr/include/sys/cdefs.h \
+ /home/fallenworld/dev/android/build/sysroot/usr/include/sys/cdefs_elf.h \
+ /home/fallenworld/dev/android/build/sysroot/usr/include/android/api-level.h \
+ /home/fallenworld/dev/android/build/lib/gcc/arm-linux-androideabi/4.9.x/include/stddef.h \
+ /home/fallenworld/dev/android/build/sysroot/usr/include/string.h \
+ /home/fallenworld/dev/android/build/sysroot/usr/include/malloc.h \
+ /home/fallenworld/dev/android/build/sysroot/usr/include/xlocale.h \
+ /home/fallenworld/dev/android/build/sysroot/usr/include/alloca.h \
+ /home/fallenworld/dev/android/build/sysroot/usr/include/strings.h \
+ /home/fallenworld/dev/android/build/sysroot/usr/include/sys/types.h \
+ /home/fallenworld/dev/android/build/lib/gcc/arm-linux-androideabi/4.9.x/include/stdint.h \
+ /home/fallenworld/dev/android/build/sysroot/usr/include/stdint.h \
+ /home/fallenworld/dev/android/build/sysroot/usr/include/machine/wchar_limits.h \
+ /home/fallenworld/dev/android/build/sysroot/usr/include/linux/types.h \
+ /home/fallenworld/dev/android/build/sysroot/usr/include/asm/types.h \
+ /home/fallenworld/dev/android/build/sysroot/usr/include/asm-generic/types.h \
+ /home/fallenworld/dev/android/build/sysroot/usr/include/asm-generic/int-ll64.h \
+ /home/fallenworld/dev/android/build/sysroot/usr/include/asm/bitsperlong.h \
+ /home/fallenworld/dev/android/build/sysroot/usr/include/asm-generic/bitsperlong.h \
+ /home/fallenworld/dev/android/build/sysroot/usr/include/linux/posix_types.h \
+ /home/fallenworld/dev/android/build/sysroot/usr/include/linux/stddef.h \
+ /home/fallenworld/dev/android/build/sysroot/usr/include/linux/compiler.h \
+ /home/fallenworld/dev/android/build/sysroot/usr/include/asm/posix_types.h \
+ /home/fallenworld/dev/android/build/sysroot/usr/include/asm-generic/posix_types.h \
+ /home/fallenworld/dev/android/build/sysroot/usr/include/sys/sysmacros.h \
+ /home/fallenworld/dev/android/build/sysroot/usr/include/memory.h \
+ /home/fallenworld/dev/android/build/sysroot/usr/include/sys/stat.h \
+ /home/fallenworld/dev/android/build/sysroot/usr/include/sys/time.h \
+ /home/fallenworld/dev/android/build/sysroot/usr/include/linux/time.h \
+ /home/fallenworld/dev/android/build/sysroot/usr/include/linux/stat.h \
+ /home/fallenworld/dev/android/build/sysroot/usr/include/endian.h \
+ /home/fallenworld/dev/android/build/sysroot/usr/include/sys/endian.h \
+ xdgmimeint.h \
+ /home/fallenworld/dev/android/build/sysroot/usr/include/stdio.h \
+ /home/fallenworld/dev/android/build/lib/gcc/arm-linux-androideabi/4.9.x/include/stdarg.h \
+ /home/fallenworld/dev/android/build/sysroot/usr/include/assert.h \
+ /home/fallenworld/dev/android/build/sysroot/usr/include/fnmatch.h
+
+../../config.h:
+
+xdgmimeparent.h:
+
+xdgmime.h:
+
+/home/fallenworld/dev/android/build/sysroot/usr/include/stdlib.h:
+
+/home/fallenworld/dev/android/build/sysroot/usr/include/sys/cdefs.h:
+
+/home/fallenworld/dev/android/build/sysroot/usr/include/sys/cdefs_elf.h:
+
+/home/fallenworld/dev/android/build/sysroot/usr/include/android/api-level.h:
+
+/home/fallenworld/dev/android/build/lib/gcc/arm-linux-androideabi/4.9.x/include/stddef.h:
+
+/home/fallenworld/dev/android/build/sysroot/usr/include/string.h:
+
+/home/fallenworld/dev/android/build/sysroot/usr/include/malloc.h:
+
+/home/fallenworld/dev/android/build/sysroot/usr/include/xlocale.h:
+
+/home/fallenworld/dev/android/build/sysroot/usr/include/alloca.h:
+
+/home/fallenworld/dev/android/build/sysroot/usr/include/strings.h:
+
+/home/fallenworld/dev/android/build/sysroot/usr/include/sys/types.h:
+
+/home/fallenworld/dev/android/build/lib/gcc/arm-linux-androideabi/4.9.x/include/stdint.h:
+
+/home/fallenworld/dev/android/build/sysroot/usr/include/stdint.h:
+
+/home/fallenworld/dev/android/build/sysroot/usr/include/machine/wchar_limits.h:
+
+/home/fallenworld/dev/android/build/sysroot/usr/include/linux/types.h:
+
+/home/fallenworld/dev/android/build/sysroot/usr/include/asm/types.h:
+
+/home/fallenworld/dev/android/build/sysroot/usr/include/asm-generic/types.h:
+
+/home/fallenworld/dev/android/build/sysroot/usr/include/asm-generic/int-ll64.h:
+
+/home/fallenworld/dev/android/build/sysroot/usr/include/asm/bitsperlong.h:
+
+/home/fallenworld/dev/android/build/sysroot/usr/include/asm-generic/bitsperlong.h:
+
+/home/fallenworld/dev/android/build/sysroot/usr/include/linux/posix_types.h:
+
+/home/fallenworld/dev/android/build/sysroot/usr/include/linux/stddef.h:
+
+/home/fallenworld/dev/android/build/sysroot/usr/include/linux/compiler.h:
+
+/home/fallenworld/dev/android/build/sysroot/usr/include/asm/posix_types.h:
+
+/home/fallenworld/dev/android/build/sysroot/usr/include/asm-generic/posix_types.h:
+
+/home/fallenworld/dev/android/build/sysroot/usr/include/sys/sysmacros.h:
+
+/home/fallenworld/dev/android/build/sysroot/usr/include/memory.h:
+
+/home/fallenworld/dev/android/build/sysroot/usr/include/sys/stat.h:
+
+/home/fallenworld/dev/android/build/sysroot/usr/include/sys/time.h:
+
+/home/fallenworld/dev/android/build/sysroot/usr/include/linux/time.h:
+
+/home/fallenworld/dev/android/build/sysroot/usr/include/linux/stat.h:
+
+/home/fallenworld/dev/android/build/sysroot/usr/include/endian.h:
+
+/home/fallenworld/dev/android/build/sysroot/usr/include/sys/endian.h:
+
+xdgmimeint.h:
+
+/home/fallenworld/dev/android/build/sysroot/usr/include/stdio.h:
+
+/home/fallenworld/dev/android/build/lib/gcc/arm-linux-androideabi/4.9.x/include/stdarg.h:
+
+/home/fallenworld/dev/android/build/sysroot/usr/include/assert.h:
+
+/home/fallenworld/dev/android/build/sysroot/usr/include/fnmatch.h:

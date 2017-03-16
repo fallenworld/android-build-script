@@ -1,0 +1,177 @@
+libglib_2_0_la-garray.lo: garray.c ../config.h \
+ /home/fallenworld/dev/android/build/sysroot/usr/include/string.h \
+ /home/fallenworld/dev/android/build/sysroot/usr/include/sys/cdefs.h \
+ /home/fallenworld/dev/android/build/sysroot/usr/include/sys/cdefs_elf.h \
+ /home/fallenworld/dev/android/build/sysroot/usr/include/android/api-level.h \
+ /home/fallenworld/dev/android/build/lib/gcc/arm-linux-androideabi/4.9.x/include/stddef.h \
+ /home/fallenworld/dev/android/build/sysroot/usr/include/malloc.h \
+ /home/fallenworld/dev/android/build/sysroot/usr/include/xlocale.h \
+ /home/fallenworld/dev/android/build/sysroot/usr/include/stdlib.h \
+ /home/fallenworld/dev/android/build/sysroot/usr/include/alloca.h \
+ /home/fallenworld/dev/android/build/sysroot/usr/include/strings.h \
+ /home/fallenworld/dev/android/build/sysroot/usr/include/sys/types.h \
+ /home/fallenworld/dev/android/build/lib/gcc/arm-linux-androideabi/4.9.x/include/stdint.h \
+ /home/fallenworld/dev/android/build/sysroot/usr/include/stdint.h \
+ /home/fallenworld/dev/android/build/sysroot/usr/include/machine/wchar_limits.h \
+ /home/fallenworld/dev/android/build/sysroot/usr/include/linux/types.h \
+ /home/fallenworld/dev/android/build/sysroot/usr/include/asm/types.h \
+ /home/fallenworld/dev/android/build/sysroot/usr/include/asm-generic/types.h \
+ /home/fallenworld/dev/android/build/sysroot/usr/include/asm-generic/int-ll64.h \
+ /home/fallenworld/dev/android/build/sysroot/usr/include/asm/bitsperlong.h \
+ /home/fallenworld/dev/android/build/sysroot/usr/include/asm-generic/bitsperlong.h \
+ /home/fallenworld/dev/android/build/sysroot/usr/include/linux/posix_types.h \
+ /home/fallenworld/dev/android/build/sysroot/usr/include/linux/stddef.h \
+ /home/fallenworld/dev/android/build/sysroot/usr/include/linux/compiler.h \
+ /home/fallenworld/dev/android/build/sysroot/usr/include/asm/posix_types.h \
+ /home/fallenworld/dev/android/build/sysroot/usr/include/asm-generic/posix_types.h \
+ /home/fallenworld/dev/android/build/sysroot/usr/include/sys/sysmacros.h \
+ /home/fallenworld/dev/android/build/sysroot/usr/include/memory.h \
+ garray.h ../glib/gtypes.h glibconfig.h ../glib/gmacros.h \
+ /home/fallenworld/dev/android/build/lib/gcc/arm-linux-androideabi/4.9.x/include-fixed/limits.h \
+ /home/fallenworld/dev/android/build/lib/gcc/arm-linux-androideabi/4.9.x/include-fixed/syslimits.h \
+ /home/fallenworld/dev/android/build/sysroot/usr/include/limits.h \
+ /home/fallenworld/dev/android/build/sysroot/usr/include/sys/limits.h \
+ /home/fallenworld/dev/android/build/sysroot/usr/include/linux/limits.h \
+ /home/fallenworld/dev/android/build/sysroot/usr/include/sys/syslimits.h \
+ /home/fallenworld/dev/android/build/lib/gcc/arm-linux-androideabi/4.9.x/include/float.h \
+ ../glib/gversionmacros.h \
+ /home/fallenworld/dev/android/build/sysroot/usr/include/time.h \
+ /home/fallenworld/dev/android/build/sysroot/usr/include/sys/time.h \
+ /home/fallenworld/dev/android/build/sysroot/usr/include/linux/time.h \
+ gbytes.h ../glib/garray.h gslice.h gmem.h ../glib/gutils.h \
+ /home/fallenworld/dev/android/build/lib/gcc/arm-linux-androideabi/4.9.x/include/stdarg.h \
+ gtestutils.h ../glib/gmessages.h ../glib/gvariant.h \
+ ../glib/gvarianttype.h ../glib/gstring.h ../glib/gunicode.h \
+ ../glib/gerror.h ../glib/gquark.h ../glib/gbytes.h ../glib/gslist.h \
+ ../glib/gmem.h ../glib/gnode.h gthread.h ../glib/gatomic.h gmessages.h \
+ gqsort.h
+
+../config.h:
+
+/home/fallenworld/dev/android/build/sysroot/usr/include/string.h:
+
+/home/fallenworld/dev/android/build/sysroot/usr/include/sys/cdefs.h:
+
+/home/fallenworld/dev/android/build/sysroot/usr/include/sys/cdefs_elf.h:
+
+/home/fallenworld/dev/android/build/sysroot/usr/include/android/api-level.h:
+
+/home/fallenworld/dev/android/build/lib/gcc/arm-linux-androideabi/4.9.x/include/stddef.h:
+
+/home/fallenworld/dev/android/build/sysroot/usr/include/malloc.h:
+
+/home/fallenworld/dev/android/build/sysroot/usr/include/xlocale.h:
+
+/home/fallenworld/dev/android/build/sysroot/usr/include/stdlib.h:
+
+/home/fallenworld/dev/android/build/sysroot/usr/include/alloca.h:
+
+/home/fallenworld/dev/android/build/sysroot/usr/include/strings.h:
+
+/home/fallenworld/dev/android/build/sysroot/usr/include/sys/types.h:
+
+/home/fallenworld/dev/android/build/lib/gcc/arm-linux-androideabi/4.9.x/include/stdint.h:
+
+/home/fallenworld/dev/android/build/sysroot/usr/include/stdint.h:
+
+/home/fallenworld/dev/android/build/sysroot/usr/include/machine/wchar_limits.h:
+
+/home/fallenworld/dev/android/build/sysroot/usr/include/linux/types.h:
+
+/home/fallenworld/dev/android/build/sysroot/usr/include/asm/types.h:
+
+/home/fallenworld/dev/android/build/sysroot/usr/include/asm-generic/types.h:
+
+/home/fallenworld/dev/android/build/sysroot/usr/include/asm-generic/int-ll64.h:
+
+/home/fallenworld/dev/android/build/sysroot/usr/include/asm/bitsperlong.h:
+
+/home/fallenworld/dev/android/build/sysroot/usr/include/asm-generic/bitsperlong.h:
+
+/home/fallenworld/dev/android/build/sysroot/usr/include/linux/posix_types.h:
+
+/home/fallenworld/dev/android/build/sysroot/usr/include/linux/stddef.h:
+
+/home/fallenworld/dev/android/build/sysroot/usr/include/linux/compiler.h:
+
+/home/fallenworld/dev/android/build/sysroot/usr/include/asm/posix_types.h:
+
+/home/fallenworld/dev/android/build/sysroot/usr/include/asm-generic/posix_types.h:
+
+/home/fallenworld/dev/android/build/sysroot/usr/include/sys/sysmacros.h:
+
+/home/fallenworld/dev/android/build/sysroot/usr/include/memory.h:
+
+garray.h:
+
+../glib/gtypes.h:
+
+glibconfig.h:
+
+../glib/gmacros.h:
+
+/home/fallenworld/dev/android/build/lib/gcc/arm-linux-androideabi/4.9.x/include-fixed/limits.h:
+
+/home/fallenworld/dev/android/build/lib/gcc/arm-linux-androideabi/4.9.x/include-fixed/syslimits.h:
+
+/home/fallenworld/dev/android/build/sysroot/usr/include/limits.h:
+
+/home/fallenworld/dev/android/build/sysroot/usr/include/sys/limits.h:
+
+/home/fallenworld/dev/android/build/sysroot/usr/include/linux/limits.h:
+
+/home/fallenworld/dev/android/build/sysroot/usr/include/sys/syslimits.h:
+
+/home/fallenworld/dev/android/build/lib/gcc/arm-linux-androideabi/4.9.x/include/float.h:
+
+../glib/gversionmacros.h:
+
+/home/fallenworld/dev/android/build/sysroot/usr/include/time.h:
+
+/home/fallenworld/dev/android/build/sysroot/usr/include/sys/time.h:
+
+/home/fallenworld/dev/android/build/sysroot/usr/include/linux/time.h:
+
+gbytes.h:
+
+../glib/garray.h:
+
+gslice.h:
+
+gmem.h:
+
+../glib/gutils.h:
+
+/home/fallenworld/dev/android/build/lib/gcc/arm-linux-androideabi/4.9.x/include/stdarg.h:
+
+gtestutils.h:
+
+../glib/gmessages.h:
+
+../glib/gvariant.h:
+
+../glib/gvarianttype.h:
+
+../glib/gstring.h:
+
+../glib/gunicode.h:
+
+../glib/gerror.h:
+
+../glib/gquark.h:
+
+../glib/gbytes.h:
+
+../glib/gslist.h:
+
+../glib/gmem.h:
+
+../glib/gnode.h:
+
+gthread.h:
+
+../glib/gatomic.h:
+
+gmessages.h:
+
+gqsort.h:

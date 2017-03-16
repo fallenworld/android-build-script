@@ -14,7 +14,6 @@
 
 @SET_MAKE@
 
-
 VPATH = @srcdir@
 am__is_gnu_make = test -n '$(MAKEFILE_LIST)' && test -n '$(MAKELEVEL)'
 am__make_running_with_option = \
@@ -268,7 +267,7 @@ am__v_lt_0 = --silent
 am__v_lt_1 = 
 libffi_la_LINK = $(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) \
 	$(LIBTOOLFLAGS) --mode=link $(CCLD) $(AM_CFLAGS) $(CFLAGS) \
-	$(libffi_la_LDFLAGS) $(LDFLAGS) -o $@
+	$(libffi_la_LDFLAGS) $(LDFLAGS) -o $@ -avoid-version
 libffi_convenience_la_LIBADD =
 am__objects_41 = src/prep_cif.lo src/types.lo src/raw_api.lo \
 	src/java_raw_api.lo src/closures.lo

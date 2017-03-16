@@ -1567,7 +1567,7 @@ fi
 
 if test "$pie" = ""; then
   case "$cpu-$targetos" in
-    i386-Linux|x86_64-Linux|x32-Linux|i386-OpenBSD|x86_64-OpenBSD)
+    i386-Linux|x86_64-Linux|x32-Linux|i386-OpenBSD|x86_64-OpenBSD|arm-linux)
       ;;
     *)
       pie="no"
@@ -4914,7 +4914,8 @@ if ( [ "$linux_user" = yes ] || [ "$bsd_user" = yes ] ) && [ "$pie" = no ]; then
   case "$cpu" in
     arm | i386 | ppc* | s390* | sparc* | x86_64 | x32)
       # ??? Rationale for choosing this address
-      textseg_addr=0x60000000
+      #textseg_addr=0x60000000
+      textseg_addr=0x00000000
       ;;
     mips)
       # A 256M aligned address, high in the address space, with enough

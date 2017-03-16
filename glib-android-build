@@ -3,9 +3,9 @@
 #Created by fallenworld
 #email:fallenworlder@gmail.com
 
-cd glib-2.50.2
+cd glib-2.50.3
 
-ANDROID_BUILD=~/sda4/android-build
+ANDROID_BUILD=~/dev/android/build
 PATH=$ANDROID_BUILD/bin:$PATH
 SYSROOT=$ANDROID_BUILD/sysroot
 HOST=arm-linux-androideabi
@@ -20,5 +20,11 @@ CONFLAGS="--prefix=${SYSROOT}/usr --host=$HOST --cache-file=android.cache --enab
 CFLAGS="$CFLAGS" CXXFLAGS="$CXXFLAGS" LDFLAGS="$LDFLAGS" ./configure $CONFLAGS &&
 
 #make & install
-make && make install
+make && make install &&
 
+#copy so files
+cp -fv gio/.libs/libgio-2.0.so ../androidLibs/
+cp -fv glib/.libs/libglib-2.0.so ../androidLibs/
+cp -fv gmodule/.libs/libgmodule-2.0.so ../androidLibs/
+cp -fv gobject/.libs/libgobject-2.0.so ../androidLibs/
+cp -fv gthread/.libs/libgthread-2.0.so ../androidLibs/

@@ -136,6 +136,8 @@ int __clone2(int (*fn)(void *), void *child_stack_base,
 
 #ifdef __ANDROID__
 
+/* Android NDK 没有实现的一些Linux系统调用 */
+
 int setdomainname(const char *name, size_t len) {
     printf("[-] %s(%d)-%s\n",__FILE__,__LINE__,__FUNCTION__);
     assert(0);
@@ -281,6 +283,46 @@ int adjtimex(struct timex *buf){
     printf("[-] %s(%d)-%s\n",__FILE__,__LINE__,__FUNCTION__);
     assert(0);
 }
+
+int syncfs(int fd)
+{
+    printf("[-] %s(%d)-%s\n",__FILE__,__LINE__,__FUNCTION__);
+    return fsync(fd);
+}
+
+int sync_file_range(int fd, off64_t offset, off64_t nbytes,
+                           unsigned int flags)
+{
+    printf("[-] %s(%d)-%s\n",__FILE__,__LINE__,__FUNCTION__);
+    return fsync(fd);
+}
+
+/*
+int getcontext(ucontext_t *ucp)
+{
+    printf("[-] %s(%d)-%s\n",__FILE__,__LINE__,__FUNCTION__);
+    assert(0);
+}
+
+void makecontext(ucontext_t *ucp, void (*func)(), int argc, ...)
+{
+    printf("[-] %s(%d)-%s\n",__FILE__,__LINE__,__FUNCTION__);
+    assert(0);
+}
+
+int swapcontext(ucontext_t *oucp, const ucontext_t *ucp)
+{
+    printf("[-] %s(%d)-%s\n",__FILE__,__LINE__,__FUNCTION__);
+    assert(0);
+}
+
+
+int clock_adjtime(const struct timeval *delta, struct timeval *olddelta)
+{
+    printf("[-] %s(%d)-%s\n",__FILE__,__LINE__,__FUNCTION__);
+    assert(0);
+}
+*/
 
 #endif
 

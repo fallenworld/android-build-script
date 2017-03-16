@@ -1,0 +1,400 @@
+libpcrecpp_la-pcre_stringpiece.lo: pcre_stringpiece.cc config.h \
+ /home/fallenworld/dev/android/build/include/c++/4.9.x/iostream \
+ /home/fallenworld/dev/android/build/include/c++/4.9.x/arm-linux-androideabi/bits/c++config.h \
+ /home/fallenworld/dev/android/build/include/c++/4.9.x/arm-linux-androideabi/bits/os_defines.h \
+ /home/fallenworld/dev/android/build/include/c++/4.9.x/arm-linux-androideabi/bits/cpu_defines.h \
+ /home/fallenworld/dev/android/build/include/c++/4.9.x/ostream \
+ /home/fallenworld/dev/android/build/include/c++/4.9.x/ios \
+ /home/fallenworld/dev/android/build/include/c++/4.9.x/iosfwd \
+ /home/fallenworld/dev/android/build/include/c++/4.9.x/bits/stringfwd.h \
+ /home/fallenworld/dev/android/build/include/c++/4.9.x/bits/memoryfwd.h \
+ /home/fallenworld/dev/android/build/include/c++/4.9.x/bits/postypes.h \
+ /home/fallenworld/dev/android/build/include/c++/4.9.x/cwchar \
+ /home/fallenworld/dev/android/build/sysroot/usr/include/wchar.h \
+ /home/fallenworld/dev/android/build/sysroot/usr/include/sys/cdefs.h \
+ /home/fallenworld/dev/android/build/sysroot/usr/include/sys/cdefs_elf.h \
+ /home/fallenworld/dev/android/build/sysroot/usr/include/android/api-level.h \
+ /home/fallenworld/dev/android/build/sysroot/usr/include/stdio.h \
+ /home/fallenworld/dev/android/build/sysroot/usr/include/sys/types.h \
+ /home/fallenworld/dev/android/build/lib/gcc/arm-linux-androideabi/4.9.x/include/stddef.h \
+ /home/fallenworld/dev/android/build/lib/gcc/arm-linux-androideabi/4.9.x/include/stdint.h \
+ /home/fallenworld/dev/android/build/sysroot/usr/include/stdint.h \
+ /home/fallenworld/dev/android/build/sysroot/usr/include/machine/wchar_limits.h \
+ /home/fallenworld/dev/android/build/sysroot/usr/include/linux/types.h \
+ /home/fallenworld/dev/android/build/sysroot/usr/include/asm/types.h \
+ /home/fallenworld/dev/android/build/sysroot/usr/include/asm-generic/types.h \
+ /home/fallenworld/dev/android/build/sysroot/usr/include/asm-generic/int-ll64.h \
+ /home/fallenworld/dev/android/build/sysroot/usr/include/asm/bitsperlong.h \
+ /home/fallenworld/dev/android/build/sysroot/usr/include/asm-generic/bitsperlong.h \
+ /home/fallenworld/dev/android/build/sysroot/usr/include/linux/posix_types.h \
+ /home/fallenworld/dev/android/build/sysroot/usr/include/linux/stddef.h \
+ /home/fallenworld/dev/android/build/sysroot/usr/include/linux/compiler.h \
+ /home/fallenworld/dev/android/build/sysroot/usr/include/asm/posix_types.h \
+ /home/fallenworld/dev/android/build/sysroot/usr/include/asm-generic/posix_types.h \
+ /home/fallenworld/dev/android/build/sysroot/usr/include/sys/sysmacros.h \
+ /home/fallenworld/dev/android/build/lib/gcc/arm-linux-androideabi/4.9.x/include/stdarg.h \
+ /home/fallenworld/dev/android/build/sysroot/usr/include/time.h \
+ /home/fallenworld/dev/android/build/sysroot/usr/include/sys/time.h \
+ /home/fallenworld/dev/android/build/sysroot/usr/include/linux/time.h \
+ /home/fallenworld/dev/android/build/sysroot/usr/include/xlocale.h \
+ /home/fallenworld/dev/android/build/include/c++/4.9.x/exception \
+ /home/fallenworld/dev/android/build/include/c++/4.9.x/bits/atomic_lockfree_defines.h \
+ /home/fallenworld/dev/android/build/include/c++/4.9.x/bits/char_traits.h \
+ /home/fallenworld/dev/android/build/include/c++/4.9.x/bits/stl_algobase.h \
+ /home/fallenworld/dev/android/build/include/c++/4.9.x/bits/functexcept.h \
+ /home/fallenworld/dev/android/build/include/c++/4.9.x/bits/exception_defines.h \
+ /home/fallenworld/dev/android/build/include/c++/4.9.x/bits/cpp_type_traits.h \
+ /home/fallenworld/dev/android/build/include/c++/4.9.x/ext/type_traits.h \
+ /home/fallenworld/dev/android/build/include/c++/4.9.x/ext/numeric_traits.h \
+ /home/fallenworld/dev/android/build/include/c++/4.9.x/bits/stl_pair.h \
+ /home/fallenworld/dev/android/build/include/c++/4.9.x/bits/move.h \
+ /home/fallenworld/dev/android/build/include/c++/4.9.x/bits/concept_check.h \
+ /home/fallenworld/dev/android/build/include/c++/4.9.x/type_traits \
+ /home/fallenworld/dev/android/build/include/c++/4.9.x/bits/stl_iterator_base_types.h \
+ /home/fallenworld/dev/android/build/include/c++/4.9.x/bits/stl_iterator_base_funcs.h \
+ /home/fallenworld/dev/android/build/include/c++/4.9.x/debug/debug.h \
+ /home/fallenworld/dev/android/build/include/c++/4.9.x/bits/stl_iterator.h \
+ /home/fallenworld/dev/android/build/include/c++/4.9.x/bits/ptr_traits.h \
+ /home/fallenworld/dev/android/build/include/c++/4.9.x/bits/predefined_ops.h \
+ /home/fallenworld/dev/android/build/include/c++/4.9.x/cstdint \
+ /home/fallenworld/dev/android/build/include/c++/4.9.x/bits/localefwd.h \
+ /home/fallenworld/dev/android/build/include/c++/4.9.x/arm-linux-androideabi/bits/c++locale.h \
+ /home/fallenworld/dev/android/build/include/c++/4.9.x/clocale \
+ /home/fallenworld/dev/android/build/sysroot/usr/include/locale.h \
+ /home/fallenworld/dev/android/build/include/c++/4.9.x/cctype \
+ /home/fallenworld/dev/android/build/sysroot/usr/include/ctype.h \
+ /home/fallenworld/dev/android/build/include/c++/4.9.x/bits/ios_base.h \
+ /home/fallenworld/dev/android/build/include/c++/4.9.x/ext/atomicity.h \
+ /home/fallenworld/dev/android/build/include/c++/4.9.x/arm-linux-androideabi/bits/gthr.h \
+ /home/fallenworld/dev/android/build/include/c++/4.9.x/arm-linux-androideabi/bits/gthr-default.h \
+ /home/fallenworld/dev/android/build/sysroot/usr/include/pthread.h \
+ /home/fallenworld/dev/android/build/sysroot/usr/include/signal.h \
+ /home/fallenworld/dev/android/build/sysroot/usr/include/errno.h \
+ /home/fallenworld/dev/android/build/sysroot/usr/include/linux/errno.h \
+ /home/fallenworld/dev/android/build/sysroot/usr/include/asm/errno.h \
+ /home/fallenworld/dev/android/build/sysroot/usr/include/asm-generic/errno.h \
+ /home/fallenworld/dev/android/build/sysroot/usr/include/asm-generic/errno-base.h \
+ /home/fallenworld/dev/android/build/lib/gcc/arm-linux-androideabi/4.9.x/include-fixed/limits.h \
+ /home/fallenworld/dev/android/build/lib/gcc/arm-linux-androideabi/4.9.x/include-fixed/syslimits.h \
+ /home/fallenworld/dev/android/build/sysroot/usr/include/limits.h \
+ /home/fallenworld/dev/android/build/sysroot/usr/include/sys/limits.h \
+ /home/fallenworld/dev/android/build/sysroot/usr/include/linux/limits.h \
+ /home/fallenworld/dev/android/build/sysroot/usr/include/sys/syslimits.h \
+ /home/fallenworld/dev/android/build/sysroot/usr/include/string.h \
+ /home/fallenworld/dev/android/build/sysroot/usr/include/malloc.h \
+ /home/fallenworld/dev/android/build/sysroot/usr/include/asm/sigcontext.h \
+ /home/fallenworld/dev/android/build/sysroot/usr/include/linux/signal.h \
+ /home/fallenworld/dev/android/build/sysroot/usr/include/asm/signal.h \
+ /home/fallenworld/dev/android/build/sysroot/usr/include/asm-generic/signal-defs.h \
+ /home/fallenworld/dev/android/build/sysroot/usr/include/asm/siginfo.h \
+ /home/fallenworld/dev/android/build/sysroot/usr/include/asm-generic/siginfo.h \
+ /home/fallenworld/dev/android/build/sysroot/usr/include/sys/ucontext.h \
+ /home/fallenworld/dev/android/build/sysroot/usr/include/sys/user.h \
+ /home/fallenworld/dev/android/build/sysroot/usr/include/sched.h \
+ /home/fallenworld/dev/android/build/sysroot/usr/include/linux/sched.h \
+ /home/fallenworld/dev/android/build/include/c++/4.9.x/arm-linux-androideabi/bits/atomic_word.h \
+ /home/fallenworld/dev/android/build/include/c++/4.9.x/bits/locale_classes.h \
+ /home/fallenworld/dev/android/build/include/c++/4.9.x/string \
+ /home/fallenworld/dev/android/build/include/c++/4.9.x/bits/allocator.h \
+ /home/fallenworld/dev/android/build/include/c++/4.9.x/arm-linux-androideabi/bits/c++allocator.h \
+ /home/fallenworld/dev/android/build/include/c++/4.9.x/ext/new_allocator.h \
+ /home/fallenworld/dev/android/build/include/c++/4.9.x/new \
+ /home/fallenworld/dev/android/build/include/c++/4.9.x/bits/ostream_insert.h \
+ /home/fallenworld/dev/android/build/include/c++/4.9.x/bits/cxxabi_forced.h \
+ /home/fallenworld/dev/android/build/include/c++/4.9.x/bits/stl_function.h \
+ /home/fallenworld/dev/android/build/include/c++/4.9.x/backward/binders.h \
+ /home/fallenworld/dev/android/build/include/c++/4.9.x/bits/range_access.h \
+ /home/fallenworld/dev/android/build/include/c++/4.9.x/bits/basic_string.h \
+ /home/fallenworld/dev/android/build/include/c++/4.9.x/initializer_list \
+ /home/fallenworld/dev/android/build/include/c++/4.9.x/bits/functional_hash.h \
+ /home/fallenworld/dev/android/build/include/c++/4.9.x/bits/hash_bytes.h \
+ /home/fallenworld/dev/android/build/include/c++/4.9.x/bits/basic_string.tcc \
+ /home/fallenworld/dev/android/build/include/c++/4.9.x/bits/locale_classes.tcc \
+ /home/fallenworld/dev/android/build/include/c++/4.9.x/streambuf \
+ /home/fallenworld/dev/android/build/include/c++/4.9.x/bits/streambuf.tcc \
+ /home/fallenworld/dev/android/build/include/c++/4.9.x/bits/basic_ios.h \
+ /home/fallenworld/dev/android/build/include/c++/4.9.x/bits/locale_facets.h \
+ /home/fallenworld/dev/android/build/include/c++/4.9.x/cwctype \
+ /home/fallenworld/dev/android/build/sysroot/usr/include/wctype.h \
+ /home/fallenworld/dev/android/build/include/c++/4.9.x/arm-linux-androideabi/bits/ctype_base.h \
+ /home/fallenworld/dev/android/build/include/c++/4.9.x/bits/streambuf_iterator.h \
+ /home/fallenworld/dev/android/build/include/c++/4.9.x/arm-linux-androideabi/bits/ctype_inline.h \
+ /home/fallenworld/dev/android/build/include/c++/4.9.x/bits/locale_facets.tcc \
+ /home/fallenworld/dev/android/build/include/c++/4.9.x/bits/basic_ios.tcc \
+ /home/fallenworld/dev/android/build/include/c++/4.9.x/bits/ostream.tcc \
+ /home/fallenworld/dev/android/build/include/c++/4.9.x/istream \
+ /home/fallenworld/dev/android/build/include/c++/4.9.x/bits/istream.tcc \
+ pcrecpp_internal.h pcre_stringpiece.h \
+ /home/fallenworld/dev/android/build/include/c++/4.9.x/cstring pcre.h \
+ /home/fallenworld/dev/android/build/sysroot/usr/include/stdlib.h \
+ /home/fallenworld/dev/android/build/sysroot/usr/include/alloca.h \
+ /home/fallenworld/dev/android/build/sysroot/usr/include/strings.h \
+ /home/fallenworld/dev/android/build/sysroot/usr/include/memory.h
+
+config.h:
+
+/home/fallenworld/dev/android/build/include/c++/4.9.x/iostream:
+
+/home/fallenworld/dev/android/build/include/c++/4.9.x/arm-linux-androideabi/bits/c++config.h:
+
+/home/fallenworld/dev/android/build/include/c++/4.9.x/arm-linux-androideabi/bits/os_defines.h:
+
+/home/fallenworld/dev/android/build/include/c++/4.9.x/arm-linux-androideabi/bits/cpu_defines.h:
+
+/home/fallenworld/dev/android/build/include/c++/4.9.x/ostream:
+
+/home/fallenworld/dev/android/build/include/c++/4.9.x/ios:
+
+/home/fallenworld/dev/android/build/include/c++/4.9.x/iosfwd:
+
+/home/fallenworld/dev/android/build/include/c++/4.9.x/bits/stringfwd.h:
+
+/home/fallenworld/dev/android/build/include/c++/4.9.x/bits/memoryfwd.h:
+
+/home/fallenworld/dev/android/build/include/c++/4.9.x/bits/postypes.h:
+
+/home/fallenworld/dev/android/build/include/c++/4.9.x/cwchar:
+
+/home/fallenworld/dev/android/build/sysroot/usr/include/wchar.h:
+
+/home/fallenworld/dev/android/build/sysroot/usr/include/sys/cdefs.h:
+
+/home/fallenworld/dev/android/build/sysroot/usr/include/sys/cdefs_elf.h:
+
+/home/fallenworld/dev/android/build/sysroot/usr/include/android/api-level.h:
+
+/home/fallenworld/dev/android/build/sysroot/usr/include/stdio.h:
+
+/home/fallenworld/dev/android/build/sysroot/usr/include/sys/types.h:
+
+/home/fallenworld/dev/android/build/lib/gcc/arm-linux-androideabi/4.9.x/include/stddef.h:
+
+/home/fallenworld/dev/android/build/lib/gcc/arm-linux-androideabi/4.9.x/include/stdint.h:
+
+/home/fallenworld/dev/android/build/sysroot/usr/include/stdint.h:
+
+/home/fallenworld/dev/android/build/sysroot/usr/include/machine/wchar_limits.h:
+
+/home/fallenworld/dev/android/build/sysroot/usr/include/linux/types.h:
+
+/home/fallenworld/dev/android/build/sysroot/usr/include/asm/types.h:
+
+/home/fallenworld/dev/android/build/sysroot/usr/include/asm-generic/types.h:
+
+/home/fallenworld/dev/android/build/sysroot/usr/include/asm-generic/int-ll64.h:
+
+/home/fallenworld/dev/android/build/sysroot/usr/include/asm/bitsperlong.h:
+
+/home/fallenworld/dev/android/build/sysroot/usr/include/asm-generic/bitsperlong.h:
+
+/home/fallenworld/dev/android/build/sysroot/usr/include/linux/posix_types.h:
+
+/home/fallenworld/dev/android/build/sysroot/usr/include/linux/stddef.h:
+
+/home/fallenworld/dev/android/build/sysroot/usr/include/linux/compiler.h:
+
+/home/fallenworld/dev/android/build/sysroot/usr/include/asm/posix_types.h:
+
+/home/fallenworld/dev/android/build/sysroot/usr/include/asm-generic/posix_types.h:
+
+/home/fallenworld/dev/android/build/sysroot/usr/include/sys/sysmacros.h:
+
+/home/fallenworld/dev/android/build/lib/gcc/arm-linux-androideabi/4.9.x/include/stdarg.h:
+
+/home/fallenworld/dev/android/build/sysroot/usr/include/time.h:
+
+/home/fallenworld/dev/android/build/sysroot/usr/include/sys/time.h:
+
+/home/fallenworld/dev/android/build/sysroot/usr/include/linux/time.h:
+
+/home/fallenworld/dev/android/build/sysroot/usr/include/xlocale.h:
+
+/home/fallenworld/dev/android/build/include/c++/4.9.x/exception:
+
+/home/fallenworld/dev/android/build/include/c++/4.9.x/bits/atomic_lockfree_defines.h:
+
+/home/fallenworld/dev/android/build/include/c++/4.9.x/bits/char_traits.h:
+
+/home/fallenworld/dev/android/build/include/c++/4.9.x/bits/stl_algobase.h:
+
+/home/fallenworld/dev/android/build/include/c++/4.9.x/bits/functexcept.h:
+
+/home/fallenworld/dev/android/build/include/c++/4.9.x/bits/exception_defines.h:
+
+/home/fallenworld/dev/android/build/include/c++/4.9.x/bits/cpp_type_traits.h:
+
+/home/fallenworld/dev/android/build/include/c++/4.9.x/ext/type_traits.h:
+
+/home/fallenworld/dev/android/build/include/c++/4.9.x/ext/numeric_traits.h:
+
+/home/fallenworld/dev/android/build/include/c++/4.9.x/bits/stl_pair.h:
+
+/home/fallenworld/dev/android/build/include/c++/4.9.x/bits/move.h:
+
+/home/fallenworld/dev/android/build/include/c++/4.9.x/bits/concept_check.h:
+
+/home/fallenworld/dev/android/build/include/c++/4.9.x/type_traits:
+
+/home/fallenworld/dev/android/build/include/c++/4.9.x/bits/stl_iterator_base_types.h:
+
+/home/fallenworld/dev/android/build/include/c++/4.9.x/bits/stl_iterator_base_funcs.h:
+
+/home/fallenworld/dev/android/build/include/c++/4.9.x/debug/debug.h:
+
+/home/fallenworld/dev/android/build/include/c++/4.9.x/bits/stl_iterator.h:
+
+/home/fallenworld/dev/android/build/include/c++/4.9.x/bits/ptr_traits.h:
+
+/home/fallenworld/dev/android/build/include/c++/4.9.x/bits/predefined_ops.h:
+
+/home/fallenworld/dev/android/build/include/c++/4.9.x/cstdint:
+
+/home/fallenworld/dev/android/build/include/c++/4.9.x/bits/localefwd.h:
+
+/home/fallenworld/dev/android/build/include/c++/4.9.x/arm-linux-androideabi/bits/c++locale.h:
+
+/home/fallenworld/dev/android/build/include/c++/4.9.x/clocale:
+
+/home/fallenworld/dev/android/build/sysroot/usr/include/locale.h:
+
+/home/fallenworld/dev/android/build/include/c++/4.9.x/cctype:
+
+/home/fallenworld/dev/android/build/sysroot/usr/include/ctype.h:
+
+/home/fallenworld/dev/android/build/include/c++/4.9.x/bits/ios_base.h:
+
+/home/fallenworld/dev/android/build/include/c++/4.9.x/ext/atomicity.h:
+
+/home/fallenworld/dev/android/build/include/c++/4.9.x/arm-linux-androideabi/bits/gthr.h:
+
+/home/fallenworld/dev/android/build/include/c++/4.9.x/arm-linux-androideabi/bits/gthr-default.h:
+
+/home/fallenworld/dev/android/build/sysroot/usr/include/pthread.h:
+
+/home/fallenworld/dev/android/build/sysroot/usr/include/signal.h:
+
+/home/fallenworld/dev/android/build/sysroot/usr/include/errno.h:
+
+/home/fallenworld/dev/android/build/sysroot/usr/include/linux/errno.h:
+
+/home/fallenworld/dev/android/build/sysroot/usr/include/asm/errno.h:
+
+/home/fallenworld/dev/android/build/sysroot/usr/include/asm-generic/errno.h:
+
+/home/fallenworld/dev/android/build/sysroot/usr/include/asm-generic/errno-base.h:
+
+/home/fallenworld/dev/android/build/lib/gcc/arm-linux-androideabi/4.9.x/include-fixed/limits.h:
+
+/home/fallenworld/dev/android/build/lib/gcc/arm-linux-androideabi/4.9.x/include-fixed/syslimits.h:
+
+/home/fallenworld/dev/android/build/sysroot/usr/include/limits.h:
+
+/home/fallenworld/dev/android/build/sysroot/usr/include/sys/limits.h:
+
+/home/fallenworld/dev/android/build/sysroot/usr/include/linux/limits.h:
+
+/home/fallenworld/dev/android/build/sysroot/usr/include/sys/syslimits.h:
+
+/home/fallenworld/dev/android/build/sysroot/usr/include/string.h:
+
+/home/fallenworld/dev/android/build/sysroot/usr/include/malloc.h:
+
+/home/fallenworld/dev/android/build/sysroot/usr/include/asm/sigcontext.h:
+
+/home/fallenworld/dev/android/build/sysroot/usr/include/linux/signal.h:
+
+/home/fallenworld/dev/android/build/sysroot/usr/include/asm/signal.h:
+
+/home/fallenworld/dev/android/build/sysroot/usr/include/asm-generic/signal-defs.h:
+
+/home/fallenworld/dev/android/build/sysroot/usr/include/asm/siginfo.h:
+
+/home/fallenworld/dev/android/build/sysroot/usr/include/asm-generic/siginfo.h:
+
+/home/fallenworld/dev/android/build/sysroot/usr/include/sys/ucontext.h:
+
+/home/fallenworld/dev/android/build/sysroot/usr/include/sys/user.h:
+
+/home/fallenworld/dev/android/build/sysroot/usr/include/sched.h:
+
+/home/fallenworld/dev/android/build/sysroot/usr/include/linux/sched.h:
+
+/home/fallenworld/dev/android/build/include/c++/4.9.x/arm-linux-androideabi/bits/atomic_word.h:
+
+/home/fallenworld/dev/android/build/include/c++/4.9.x/bits/locale_classes.h:
+
+/home/fallenworld/dev/android/build/include/c++/4.9.x/string:
+
+/home/fallenworld/dev/android/build/include/c++/4.9.x/bits/allocator.h:
+
+/home/fallenworld/dev/android/build/include/c++/4.9.x/arm-linux-androideabi/bits/c++allocator.h:
+
+/home/fallenworld/dev/android/build/include/c++/4.9.x/ext/new_allocator.h:
+
+/home/fallenworld/dev/android/build/include/c++/4.9.x/new:
+
+/home/fallenworld/dev/android/build/include/c++/4.9.x/bits/ostream_insert.h:
+
+/home/fallenworld/dev/android/build/include/c++/4.9.x/bits/cxxabi_forced.h:
+
+/home/fallenworld/dev/android/build/include/c++/4.9.x/bits/stl_function.h:
+
+/home/fallenworld/dev/android/build/include/c++/4.9.x/backward/binders.h:
+
+/home/fallenworld/dev/android/build/include/c++/4.9.x/bits/range_access.h:
+
+/home/fallenworld/dev/android/build/include/c++/4.9.x/bits/basic_string.h:
+
+/home/fallenworld/dev/android/build/include/c++/4.9.x/initializer_list:
+
+/home/fallenworld/dev/android/build/include/c++/4.9.x/bits/functional_hash.h:
+
+/home/fallenworld/dev/android/build/include/c++/4.9.x/bits/hash_bytes.h:
+
+/home/fallenworld/dev/android/build/include/c++/4.9.x/bits/basic_string.tcc:
+
+/home/fallenworld/dev/android/build/include/c++/4.9.x/bits/locale_classes.tcc:
+
+/home/fallenworld/dev/android/build/include/c++/4.9.x/streambuf:
+
+/home/fallenworld/dev/android/build/include/c++/4.9.x/bits/streambuf.tcc:
+
+/home/fallenworld/dev/android/build/include/c++/4.9.x/bits/basic_ios.h:
+
+/home/fallenworld/dev/android/build/include/c++/4.9.x/bits/locale_facets.h:
+
+/home/fallenworld/dev/android/build/include/c++/4.9.x/cwctype:
+
+/home/fallenworld/dev/android/build/sysroot/usr/include/wctype.h:
+
+/home/fallenworld/dev/android/build/include/c++/4.9.x/arm-linux-androideabi/bits/ctype_base.h:
+
+/home/fallenworld/dev/android/build/include/c++/4.9.x/bits/streambuf_iterator.h:
+
+/home/fallenworld/dev/android/build/include/c++/4.9.x/arm-linux-androideabi/bits/ctype_inline.h:
+
+/home/fallenworld/dev/android/build/include/c++/4.9.x/bits/locale_facets.tcc:
+
+/home/fallenworld/dev/android/build/include/c++/4.9.x/bits/basic_ios.tcc:
+
+/home/fallenworld/dev/android/build/include/c++/4.9.x/bits/ostream.tcc:
+
+/home/fallenworld/dev/android/build/include/c++/4.9.x/istream:
+
+/home/fallenworld/dev/android/build/include/c++/4.9.x/bits/istream.tcc:
+
+pcrecpp_internal.h:
+
+pcre_stringpiece.h:
+
+/home/fallenworld/dev/android/build/include/c++/4.9.x/cstring:
+
+pcre.h:
+
+/home/fallenworld/dev/android/build/sysroot/usr/include/stdlib.h:
+
+/home/fallenworld/dev/android/build/sysroot/usr/include/alloca.h:
+
+/home/fallenworld/dev/android/build/sysroot/usr/include/strings.h:
+
+/home/fallenworld/dev/android/build/sysroot/usr/include/memory.h:

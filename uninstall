@@ -1,0 +1,29 @@
+#!/bin/sh
+
+cd gettext-0.19.8.1
+make uninstall
+cd ..
+
+cd glib-2.50.3
+make uninstall
+cd ..
+
+cd libffi-3.2.1
+make uninstall
+cd ..
+
+cd libiconv-1.14
+make uninstall
+cd ..
+
+cd libpng-1.2.57
+make uninstall
+cd ..
+
+cd pcre-8.40
+make uninstall
+cd ..
+
+cd qemu-2.8.0
+make uninstall
+cd ..

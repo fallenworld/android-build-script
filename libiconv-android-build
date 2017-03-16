@@ -5,7 +5,7 @@
 
 cd libiconv-1.14
 
-ANDROID_BUILD=~/sda4/android-build
+ANDROID_BUILD=~/dev/android/build
 PATH=$ANDROID_BUILD/bin:$PATH
 SYSROOT=$ANDROID_BUILD/sysroot
 HOST=arm-linux-androideabi
@@ -20,5 +20,7 @@ CONFLAGS="--prefix=${SYSROOT}/usr --host=$HOST"
 CFLAGS="$CFLAGS" CXXFLAGS="$CXXFLAGS" LDFLAGS="$LDFLAGS" ./configure $CONFLAGS &&
 
 #make & install
-make && make install
+make && make install &&
 
+##Copy .so files
+cp -fv $SOPATH ../androidLibs/

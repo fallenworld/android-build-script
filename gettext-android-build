@@ -5,7 +5,7 @@
 
 cd gettext-0.19.8.1
 
-ANDROID_BUILD=~/sda4/android-build
+ANDROID_BUILD=~/dev/android/build
 PATH=$ANDROID_BUILD/bin:$PATH
 SYSROOT=$ANDROID_BUILD/sysroot
 HOST=arm-linux-androideabi
@@ -20,5 +20,13 @@ CONFLAGS="--prefix=${SYSROOT}/usr --host=$HOST"
 CFLAGS="$CFLAGS" CXXFLAGS="$CXXFLAGS" LDFLAGS="$LDFLAGS" ./configure $CONFLAGS &&
 
 #make & install
-make && make install
+make && make install &&
+
+#copy .so files
+cp -fv gettext-runtime/intl/.libs/libintl.so ../androidLibs/
+cp -fv gettext-runtime/libasprintf/.libs/libasprintf.so ../androidLibs/
+cp -fv gettext-tools/libgettextpo/.libs/libgettextpo.so ../androidLibs/
+cp -fv gettext-tools/gnulib-lib/.libs/libgettextlib-0.19.8.1.so ../androidLibs/
+cp -fv gettext-tools/src/.libs/libgettextsrc-0.19.8.1.so ../androidLibs/
+
 
